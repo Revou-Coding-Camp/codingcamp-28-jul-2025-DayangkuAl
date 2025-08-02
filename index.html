@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="navbar">
+        <div class="logo">
+            <img src="foto.jpg" alt="Logo" height="50">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">Our Profile</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#message">Message Us</a>
+        </nav>
+    </header>
+
+    <section class="banner" id="home">
+        <h1>Hi , Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama Dayangku</p>
+        <img src="mela.jpg" alt="Banner" class="banner-img">
+    </section>
+
+    <section class="profile" id="profile">
+        <h2>Our Profile</h2>
+        <p>Dayangku Alkhansa adalah seorang mahasiswi Teknik Informatika yang aktif dalam organisasi, kreatif di bidang konten digital, dan memiliki minat tinggi dalam pengembangan teknologi ramah pengguna.</p>
+        <p>Dengan semangat belajar dan pengalaman sebagai tim kreatif di Multimedia, ia percaya bahwa teknologi dan kreativitas dapat menjadi solusi dalam berbagai bidang sosial.</p>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="podcast.jpg" alt="Desain 1">
+                <p>Podcast SiBungsu</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="cerita.jpg" alt="Desain 2">
+                <p>Membuat Cerita</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Master of Ceremony.jpg" alt="Desain 3">
+                <p>Master of Ceremony</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-us" id="message">
+        <div class="form-container">
+            <form id="messageForm">
+                <h3>Message Us</h3>
+                <label>Nama:<input type="text" id="name" required></label>
+                <label>Tanggal Lahir:<input type="date" id="birthdate" required></label>
+                <label>Jenis Kelamin:
+                    <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+                    <input type="radio" name="gender" value="Perempuan"> Perempuan
+                </label>
+                <label>Pesan:<textarea id="message" required></textarea></label>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="output" id="output"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Dayangku Alkhansa - RevoU</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
